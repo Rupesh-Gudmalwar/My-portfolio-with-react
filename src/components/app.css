@@ -1,0 +1,98 @@
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f5f8fd;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(29, 28, 27);
+    padding: 10px;
+    /* z-index: 2; */
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+li{
+    padding: 0.6em;
+}
+
+li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo{
+    font-size: larger;
+    font-weight:700;
+    color: rgb(231, 223, 223);
+}
+
+#about-me h1, #resume h1, #contact-me h1{
+    text-align: center;
+}
+
+#about-me{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.intro, .my-skills{
+    width: 35%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: justify;
+    background-color: #fff;
+    box-shadow: 0 3px 24px rgb(0 0 0 / 0.5);
+}
+
+.intro h2, .my-skills h2{
+    text-align: center;
+}
+
+.about h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: url('../bg.jpg'); */
+    height: 100vh;
+    width: 100vw;
+    position: absolute, no-repeat;
+    color: rgb(224, 219, 219);
+    /* opacity: 0.5; */
+    z-index: 1;
+}
+
+.banner h4{
+    font-size: 27px;
+}
+
+.banner h1{
+    font-size: 75px;
+    font-weight: 600;
+}
+
+.banner h3{
+    font-size: 40px;
+    margin: 5px 0;
+}
