@@ -1,16 +1,16 @@
-import React from "react";
+import React, { memo } from "react";
 
 import Particles from "react-tsparticles";
 
-const Particle = () => {
+const Particle = memo(() => {
   return (
     <Particles
-      id="tsparticles"
+      id='tsparticles'
       options={{
         autoPlay: true,
         background: {
           color: {
-            value: "#000",
+            value: "#001110",
           },
           image: "",
           position: "",
@@ -18,249 +18,13 @@ const Particle = () => {
           size: "",
           opacity: 1,
         },
-        backgroundMask: {
-          composite: "destination-out",
-          cover: {
-            color: {
-              value: "#fff",
-            },
-            opacity: 1,
-          },
-          enable: false,
-        },
         fullScreen: {
           enable: true,
           zIndex: -1,
         },
         detectRetina: true,
         duration: 0,
-        fpsLimit: 60,
-        interactivity: {
-          // detectsOn: "window",
-          events: {
-            onClick: {
-              enable: false,
-              mode: [],
-            },
-            onDiv: {
-              selectors: [],
-              enable: false,
-              mode: [],
-              type: "circle",
-            },
-            onHover: {
-              enable: true,
-              mode: "trail",
-              parallax: {
-                enable: false,
-                force: 2,
-                smooth: 10,
-              },
-            },
-            resize: true,
-          },
-          modes: {
-            attract: {
-              distance: 200,
-              duration: 0.4,
-              easing: "ease-out-quad",
-              factor: 1,
-              maxSpeed: 10,
-              speed: 1,
-            },
-            bounce: {
-              distance: 200,
-            },
-            bubble: {
-              distance: 200,
-              duration: 0.4,
-              mix: false,
-            },
-            connect: {
-              distance: 80,
-              links: {
-                opacity: 0.5,
-              },
-              radius: 60,
-            },
-            grab: {
-              distance: 100,
-              links: {
-                blink: false,
-                consent: false,
-                opacity: 1,
-              },
-            },
-            light: {
-              area: {
-                gradient: {
-                  start: {
-                    value: "#ffffff",
-                  },
-                  stop: {
-                    value: "#000000",
-                  },
-                },
-                radius: 1000,
-              },
-              shadow: {
-                color: {
-                  value: "#000000",
-                },
-                length: 2000,
-              },
-            },
-            push: {
-              default: true,
-              groups: [],
-              quantity: 4,
-            },
-            remove: {
-              quantity: 2,
-            },
-            repulse: {
-              distance: 200,
-              duration: 0.4,
-              factor: 100,
-              speed: 1,
-              maxSpeed: 10,
-              easing: "ease-out-quad",
-            },
-            slow: {
-              factor: 3,
-              radius: 200,
-            },
-            trail: {
-              delay: 0.005,
-              pauseOnStop: true,
-              quantity: 5,
-              particles: {
-                color: {
-                  value: "#ff0000",
-                  animation: {
-                    enable: true,
-                    speed: 200,
-                    sync: true,
-                  },
-                },
-                collisions: {
-                  enable: false,
-                  bounce: {
-                    horizontal: {
-                      random: {},
-                    },
-                    vertical: {
-                      random: {},
-                    },
-                  },
-                  overlap: {},
-                },
-                links: {
-                  enable: false,
-                  shadow: {},
-                  triangles: {},
-                },
-                move: {
-                  outModes: {
-                    default: "destroy",
-                  },
-                  speed: 2,
-                  angle: {},
-                  attract: {
-                    rotate: {},
-                  },
-                  distance: {},
-                  gravity: {},
-                  path: {
-                    delay: {
-                      random: {},
-                    },
-                  },
-                  trail: {},
-                },
-                size: {
-                  value: 5,
-                  animation: {
-                    enable: true,
-                    speed: 5,
-                    minimumValue: 1,
-                    sync: true,
-                    startValue: "min",
-                    destroy: "max",
-                  },
-                  random: {},
-                },
-                bounce: {
-                  horizontal: {
-                    random: {},
-                  },
-                  vertical: {
-                    random: {},
-                  },
-                },
-                destroy: {
-                  split: {
-                    factor: {
-                      random: {},
-                    },
-                    rate: {
-                      random: {},
-                    },
-                  },
-                },
-                life: {
-                  delay: {
-                    random: {},
-                  },
-                  duration: {
-                    random: {},
-                  },
-                },
-                number: {
-                  density: {},
-                },
-                opacity: {
-                  animation: {},
-                  random: {},
-                },
-                roll: {
-                  darken: {},
-                  enlighten: {},
-                },
-                rotate: {
-                  animation: {},
-                },
-                shadow: {
-                  offset: {},
-                },
-                shape: {},
-                stroke: {
-                  color: {
-                    value: "",
-                    animation: {
-                      count: 0,
-                      enable: false,
-                      offset: {
-                        max: 0,
-                        min: 0,
-                      },
-                      speed: 0,
-                      sync: false,
-                    },
-                  },
-                },
-                tilt: {
-                  animation: {},
-                },
-                twinkle: {
-                  lines: {},
-                  particles: {},
-                },
-                wobble: {},
-              },
-            },
-          },
-        },
+        fpsLimit: 30,
         manualParticles: [],
         motion: {
           disable: false,
@@ -369,13 +133,13 @@ const Particle = () => {
                 enable: false,
                 minimumValue: 0,
               },
-              value: 0,
+              value: 10,
               sync: false,
             },
             duration: {
               random: {
                 enable: false,
-                minimumValue: 0.0001,
+                minimumValue: 1,
               },
               value: 0,
               sync: false,
@@ -665,6 +429,6 @@ const Particle = () => {
       }}
     />
   );
-};
+});
 
 export default Particle;

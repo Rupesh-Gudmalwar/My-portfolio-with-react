@@ -12,10 +12,11 @@ const banner = () => {
         <Typewriter
           options={{
             strings: [
-              "Web developer",
-              "Frontend enthuasist",
+              "Software developer",
+              "Frontend expert",
+              "Programming enthuasist",
               "Learner",
-              "Programmer",
+              "Web security follower",
             ],
             autoStart: true,
             loop: true,
